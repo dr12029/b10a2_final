@@ -22,6 +22,10 @@
 }
 
 /* shared styles */
+.hide{
+    display: none;
+}
+
 body {
     background-color: black;
 }
@@ -62,7 +66,15 @@ ul {
 
 .primary-title{
     color: rgb(255, 255, 255);
+    font-size: 3rem;
     font-weight: 900;
+    line-height: 120%;
+}
+
+.secondary-title{
+    color: rgb(255, 255, 255);
+    font-size: 1.125rem;
+    font-weight: 600;
     line-height: 120%;
 }
 
@@ -186,6 +198,49 @@ nav{
 .floating-card2>h1{
      font-size: 1.5rem;
 }
+
+/* change habit styles */
+
+.change-habit{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin: 0 198px;
+}
+
+.change-habit>h1{
+    margin-bottom: 14px;
+}
+
+.change-habit>p{
+    width: 671px;
+    margin-bottom: 58px;
+}
+
+.habits-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 40px;
+}
+.habits-card{
+    /* width: 231px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.habits-image{
+    border: 1px solid rgb(0, 0, 0, 0.5);
+    border-radius: 50%;
+    margin-bottom:30px;
+}
+
+.habits-card>h3{
+    margin-bottom: 6px;
+}
+
 /* media query for small devices */
 
 @media screen and (max-width: 576px) {
@@ -202,4 +257,24 @@ nav{
         display: block;
     }
 
+    /* change habit section */
+
+    .change-habit{
+        margin: 1.6rem;
+    }
+
+    .change-habit>h1{
+        font-size: 2rem;
+    }
+    .change-habit>p{
+        font-size: .875rem;
+        width: 316px;
+    }
+
+    .habits-container{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+    }
 }
