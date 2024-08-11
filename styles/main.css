@@ -46,12 +46,13 @@ ul {
 
 .btn-primary {
     color: rgb(255, 255, 255);
+    width: 224px;
     font-size: 1.125rem;
     font-weight: 600;
     border: none;
     border-radius: 2.875rem;
     background: rgb(230, 83, 60);
-    padding: .5rem 1.25rem;
+    padding: 1rem 2.5rem;
 }
 
 .btn-secondary{
@@ -69,6 +70,7 @@ ul {
     font-size: 3rem;
     font-weight: 900;
     line-height: 120%;
+    letter-spacing: 0%;
 }
 
 .secondary-title{
@@ -81,6 +83,12 @@ ul {
 .primary-description{
     color: rgba(255,255,255,0.5);
     font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.secondary-description{
+    color: rgba(255,255,255,0.5);
+    font-size: 0.875rem;
     line-height: 1.5rem;
 }
 
@@ -110,6 +118,11 @@ nav{
     color: rgb(255, 255, 255);
     font-size: 1rem;
     font-weight: 400;
+}
+
+.btn-home{
+    width: 92px;
+    padding: .5rem 1.25rem ;
 }
 
 #navbar-about {
@@ -148,11 +161,7 @@ nav{
 .banner-title{
     font-size: 4rem;
 }
- 
-.join-btn{
-    margin-right: 14px;
-    padding: 1rem 2.5rem;
-}
+
 
 
 .banner-pic{
@@ -241,6 +250,33 @@ nav{
     margin-bottom: 6px;
 }
 
+/* run an extra mile styles */
+
+.run-extra{
+    gap: 8rem;
+    background: rgb(34, 34, 34);
+    border: none;
+    border-radius: 1rem;
+    margin: 100px 190px;
+    padding: 1.2rem;
+    padding-left: 3.3rem;
+}
+
+.run-extra h1{
+    font-size: 2.5rem;
+    margin-bottom: 14px;
+}
+
+.run-extra p{
+    margin-bottom: 34px;
+}
+
+.run-pic{
+    width: 366px;
+    height: 312px;
+    border-radius: 18px;
+}
+
 /* media query for small devices */
 
 @media screen and (max-width: 576px) {
@@ -277,4 +313,33 @@ nav{
         align-content: center;
         align-items: center;
     }
+
+    /* run an extra mile styles */
+    
+    .run-extra{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+        gap: 2rem;
+        margin: 1.6rem;
+        padding: 2rem;
+    }
+
+    .run-extra h1{
+        font-size: 2rem;
+    }
+
+    .run-extra p{
+        font-size: .875rem;
+    }
+
+    .run-extra button{
+        width: 100%;
+    }
+
+    .run-pic{
+        width: 100%;
+    }
+
 }
