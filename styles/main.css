@@ -71,6 +71,7 @@ ul {
     font-weight: 900;
     line-height: 120%;
     letter-spacing: 0%;
+    margin-bottom: 14px;
 }
 
 .secondary-title{
@@ -218,9 +219,6 @@ nav{
     margin: 0 198px;
 }
 
-.change-habit>h1{
-    margin-bottom: 14px;
-}
 
 .change-habit>p{
     width: 671px;
@@ -264,7 +262,6 @@ nav{
 
 .run-extra h1{
     font-size: 2.5rem;
-    margin-bottom: 14px;
 }
 
 .run-extra p{
@@ -275,6 +272,62 @@ nav{
     width: 366px;
     height: 312px;
     border-radius: 18px;
+}
+
+/* meat our team styles */
+
+.meet-team{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0px 190px;
+    margin-bottom: 88px;
+}
+.meet-team>p{
+    margin-bottom: 58px;
+}
+
+.team-pic-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    padding: 1.25rem;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.team-member{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-left: 1.5rem;
+    padding-bottom: 1.25rem;
+    height: 272px;
+    border-radius: 1.125rem  ;
+}
+
+.member1{
+    background: url(../images/trainer1.png);
+}
+
+.member2{
+    background: url(../images/trainer2.png);
+}
+
+.member3{
+    background: url(../images/trainer3.png);
+}
+
+.member4{
+    background: url(../images/trainer4.png);
+}
+
+.member5{
+    background: url(../images/trainer5.png);
+}
+
+.member6{
+    background: url(../images/trainer6.png);
 }
 
 /* media query for small devices */
@@ -322,7 +375,7 @@ nav{
         align-items: center;
         text-align: left;
         gap: 2rem;
-        margin: 1.6rem;
+        margin: 4rem  1.6rem;
         padding: 2rem;
     }
 
@@ -342,4 +395,22 @@ nav{
         width: 100%;
     }
 
+    /* meet our team section styles */
+
+    .meet-team{
+        margin: 0 1.6rem;
+    }
+
+    .meet-team>h1{
+        font-size: 2rem;
+    }
+
+    .uhu{
+        width: 80vw;
+    }
+    .team-pic-container{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+
+    }
 }
