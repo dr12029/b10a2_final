@@ -380,6 +380,47 @@ input, select{
     margin: 0;
 }
 
+/* review stylest */
+
+.review{
+    text-align: center;
+    margin: 0 11.875rem 5.5rem 11.875rem;
+}
+
+.review-info>h1{
+    margin-bottom: 1rem;
+}
+
+.review-info>p{
+    margin-bottom: 5rem;
+}
+
+.review-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 5rem;
+}
+
+.review-card{
+    text-align: left;
+    padding: 2rem;
+    border: none;
+    border-radius: .875rem;
+    background: rgba(255,255,255,0.1);
+}
+
+.name-review{
+    display: flex;
+    gap: 1.25rem;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.name-review>img{
+    width: 50px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+}
 /* footer styles */
 footer{
     display: flex;
@@ -528,6 +569,17 @@ footer li{
 
     .team-member>img{
         width: 100%;
+    }
+
+    /* review styles */
+
+    .review{
+        margin: 0 1.6rem 4rem 1.6rem ;
+    }
+
+    .review-container{
+        grid-template-columns: repeat(1,1fr);
+        gap: 1.5rem;
     }
 
     /* footer styles*/
