@@ -95,8 +95,17 @@ ul {
 
 /* nav-bar styles */
 
+header{
+    /* background: rgb(17, 17, 17); */
+    background: linear-gradient(180deg,
+    rgba(119, 119, 119, 0.01),
+    rgba(17, 17, 17) 50%,
+    rgba(119, 119, 119, 0.01) 100%);
+}
+
 nav{
-    margin: 3rem 11.875rem 0 11.875rem;
+    margin: 0 11.875rem 0 11.875rem;
+    padding: 3rem;
 }
 
 .logo {
@@ -297,7 +306,7 @@ nav{
 }
 .bmi-title-section{
     width: 40rem;
-    padding-left: 375px;
+    margin: 0 auto;
     margin-bottom: 5.5rem;
 }
 
@@ -305,7 +314,7 @@ nav{
     display: flex;
     justify-content: space-between;
     gap: 6.2rem;
-    padding: 3.25rem 190px;
+    padding: 3.25rem 11.875rem;
     background: rgb(34, 34, 34);
 }
 
@@ -327,20 +336,20 @@ td{
 }
 
 .calculate{
-    width: 577px;
+    width: 500px;
 }
 .calculate>h1{
     margin-bottom: 14px;
 }
 
 .calculate>p{
-    margin-bottom:  2rem;
+    margin-bottom: 2rem;
 }
 
 form{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    gap: 12px;
+    gap: 0.75rem;
 }
 
 form select:last-child{
@@ -353,6 +362,13 @@ input, select{
     border-radius: 0.5rem;
     background: rgba(255, 255, 255, 0.1);
 }
+
+select{
+    color: rgba(255,255,255,0.2);
+    font-size: .875rem;
+    line-height: 1.5rem;
+}
+
 
 /* meat our team styles */
 
@@ -613,9 +629,9 @@ footer li{
     /* bmi styles */
 
     .bmi-title-section{
-        width: 50dvw;
+        width: 80%;
         padding: 1.6rem;
-
+        margin-bottom: 0rem;
     }
 
     .calculator-section{
