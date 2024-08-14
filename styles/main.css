@@ -96,7 +96,7 @@ ul {
 /* nav-bar styles */
 
 nav{
-    margin: 3rem 10rem 0 10rem;
+    margin: 3rem 11.875rem 0 11.875rem;
 }
 
 .logo {
@@ -155,15 +155,21 @@ nav{
 }
 
 
-.banner-card1>p{
-    margin: 28px 0;
+.primary-description{
+    margin-bottom: 28px;
 }
 
 .banner-title{
     font-size: 4rem;
 }
 
+.miama-normal{
+    font-family: 'Miama', sans-serif;
+}
 
+.banner-card2{
+    position: relative;
+}
 
 .banner-pic{
     width: 349px;
@@ -172,30 +178,35 @@ nav{
 }
 
 .floating-card{
-    width: 193px;
-    height: 98px;
+    width: 12rem;
+    height: 5.5rem;
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: .75rem;
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(20px);
     align-content: center;
-    padding: 1rem 0 1rem 1.5rem;
+    padding: .5rem 0 .5rem 1.5rem;
 }
 
 .floating-card1{
-    margin-top: -450px;
-    margin-left: 250px;
+    position: absolute;
+    top: 8rem;
+    right: 2rem;
 }
+
 .floating-card1>h1{
     font-size: 2.5rem;
+    margin-bottom: 0;
 }
 
 .floating-card2{
+    height: 5rem;
+    position: absolute;
     display: flex;
     align-items: center;
     gap: 12px;
-    margin-top: 150px;
-    margin-left: -50px;
+    bottom: 4rem;
+    left: -4rem;
 }
 
 .circle{
@@ -205,8 +216,14 @@ nav{
     border: none;
     border-radius: 50%;
 }
-.floating-card2>h1{
-     font-size: 1.5rem;
+
+.flt-crd2{
+    font-size: 1.5rem;
+    margin: 0;
+    margin-bottom: 0.3rem;
+}
+.floating-description2{
+    margin-bottom: 0;
 }
 
 /* change habit styles */
@@ -474,7 +491,7 @@ footer li{
 @media screen and (max-width: 576px) {
 
     nav{
-        margin: 52px 20px 0 20px;
+        margin: 3.25rem 1.25rem 0 1.25rem;
     }
 
     .navbar{
@@ -485,6 +502,65 @@ footer li{
         display: block;
     }
 
+    .banner{
+        display: flex;
+        flex-direction: column;
+        margin: 1.2rem;
+    }
+
+    .banner-title{
+        width: 17rem;
+        font-size: 2rem;
+    }
+
+    .banner-buttons{
+        display: flex;
+        gap: 1rem;
+    }
+    .banner-p{
+        width: 17rem;
+    }
+
+    .banner-button{
+        padding: 1rem;
+        width: 15rem;
+    }
+
+    .banner-card1{
+        width: calc(100%);
+    }
+
+    .banner-card2{
+        width: calc(100%);
+    }
+
+    .banner-pic{
+        margin-left: .8rem;
+    }
+
+    .floating-card1{
+        position: absolute;
+        top: 2rem;
+        left: 13rem;
+        width: 10rem;
+        padding: 0 1rem 0 1rem;
+        width: 9rem
+    }
+    .floating-card1>h1{
+        font-size: 2rem;
+    }
+
+    .floating-card2{
+        position: absolute;
+        left: 0rem;
+        top: 15rem;
+        padding: 0 1rem 0 1rem;
+        width: 10rem;
+    }
+    .flt-crd2{
+        font-weight:800;
+        margin: 0;
+    }
     /* change habit section */
 
     .change-habit{
