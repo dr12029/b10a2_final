@@ -507,9 +507,6 @@ footer li{
         padding: 3.25rem 1.6rem;
     }
 
-    .calculate{
-        /* width: 95%; */
-    }
     /* meet our team section styles */
 
     .meet-team{
@@ -530,7 +527,7 @@ footer li{
     }
 
     .team-member>img{
-        width: calc(100%);
+        width: 100%;
     }
 
     /* footer styles*/
