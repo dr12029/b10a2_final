@@ -104,8 +104,8 @@ header{
 }
 
 nav{
-    margin: 0 11.875rem 0 11.875rem;
-    padding: 3rem;
+    margin: 3rem 11.875rem;
+    /* padding: 3rem; */
 }
 
 .logo {
@@ -200,7 +200,7 @@ nav{
 .floating-card1{
     position: absolute;
     top: 8rem;
-    right: 2rem;
+    right: 12rem;
 }
 
 .floating-card1>h1{
@@ -507,7 +507,7 @@ footer li{
 @media screen and (max-width: 576px) {
 
     nav{
-        margin: 3.25rem 1.25rem 0 1.25rem;
+        margin: 2rem 1.25rem;
     }
 
     .navbar{
@@ -556,7 +556,7 @@ footer li{
 
     .floating-card1{
         position: absolute;
-        top: 2rem;
+        top: 8rem;
         left: 13rem;
         width: 10rem;
         padding: 0 1rem 0 1rem;
@@ -569,7 +569,7 @@ footer li{
     .floating-card2{
         position: absolute;
         left: 0rem;
-        top: 15rem;
+        top: 20rem;
         padding: 0 1rem 0 1rem;
         width: 10rem;
     }
@@ -638,6 +638,10 @@ footer li{
         flex-direction: column;
         gap: 3rem;
         padding: 3.25rem 1.6rem;
+    }
+
+    .calculate{
+        width: 100%;
     }
 
     /* meet our team section styles */
