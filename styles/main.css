@@ -274,6 +274,69 @@ nav{
     border-radius: 18px;
 }
 
+/* BMI Calculato/r */
+.bmi{
+    margin-bottom:  5.5rem;;
+}
+.bmi-title-section{
+    width: 40rem;
+    padding-left: 375px;
+    margin-bottom: 5.5rem;
+}
+
+.calculator-section{
+    display: flex;
+    justify-content: space-between;
+    gap: 6.2rem;
+    padding: 3.25rem 190px;
+    background: rgb(34, 34, 34);
+}
+
+.calculator-section h1{
+    font-size: 1.75rem;    
+}
+
+.chart>h1{
+    margin-bottom: 3.25rem;
+}
+
+table,tr,td{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-collapse: collapse;
+}
+
+td{
+    padding: 1rem 1.5rem ;
+}
+
+.calculate{
+    width: 577px;
+}
+.calculate>h1{
+    margin-bottom: 14px;
+}
+
+.calculate>p{
+    margin-bottom:  2rem;
+}
+
+form{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 12px;
+}
+
+form select:last-child{
+    grid-column: 1/-1;
+}
+
+input, select{
+    padding: 1.25rem 0.75rem;
+    border: none;
+    border-radius: 0.5rem;
+    background: rgba(255, 255, 255, 0.1);
+}
+
 /* meat our team styles */
 
 .meet-team{
@@ -326,23 +389,24 @@ footer{
     background: rgba(255, 255, 255, 0.1);
 }
 
+
 .main-footer{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    gap: 6rem;
-    margin: 88px 190px 0 190px;
+    gap: 4rem;
+    margin: 5.5rem 11.875rem 2.25rem 11.875rem;
     padding-bottom: 5rem;
     border-bottom: 2px solid rgba(255, 255, 255, 0.1);
 }
 
-/* footer-2{
+.footer-2{
     display: flex;
-} */
-
+    gap: 3rem;
+}
 
 footer .logo{
     font-size: 4.375rem;
-    margin-bottom: 20px ;
+    margin-bottom: 1.25rem;
 }
 
 footer h3{
@@ -429,6 +493,23 @@ footer li{
         width: 100%;
     }
 
+    /* bmi styles */
+
+    .bmi-title-section{
+        width: 50dvw;
+        padding: 1.6rem;
+
+    }
+
+    .calculator-section{
+        flex-direction: column;
+        gap: 3rem;
+        padding: 3.25rem 1.6rem;
+    }
+
+    .calculate{
+        /* width: 95%; */
+    }
     /* meet our team section styles */
 
     .meet-team{
@@ -450,4 +531,17 @@ footer li{
 
     .team-member>img{
         width: calc(100%);
+    }
+
+    /* footer styles*/
+
+    .main-footer{
+        grid-template-columns: repeat(1,1fr);
+        margin: 4rem 1.6rem 1.5rem 1.6rem;
+        padding-bottom: 3.5rem;
+    }
+
+    .footer-2{
+        flex-direction: column;
+    }
 }
